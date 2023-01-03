@@ -17,7 +17,7 @@
     <!-- NAVBAR -->
   <nav class="navbar">
     <div class="container-fluid">
-    <a class="navbar-brand logo" href="index.html"><i class="fa-brands fa-twitter"></i></a>
+    <a class="navbar-brand logo" href="{% url 'index' %}"><i class="fa-brands fa-twitter"></i></a>
     <form class="d-flex m-auto searchBarBase" role="search">
         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         <button class="btn" type="submit"><i class="fa fa-search"></i></button>
@@ -54,13 +54,13 @@
         <div class="col-lg-4 leftMenu">
             <div class="row">
                 <div class="col-lg-12">
-                    <a href="index.html">Home</a>
+                    <a href="{% url 'index' %}">Home</a>
                 </div>
                 <div class="col-lg-12">
-                    <a href="profile.html">Profile</a>
+                    <a href="{% url 'profile' %}">Profile</a>
                 </div>
                 <div class="col-lg-12">
-                    <a href="explore.html">Explore</a>
+                    <a href="{% url 'explore' %}">Explore</a>
                 </div>
             </div>
             <div class="row prflrRow">
@@ -135,7 +135,7 @@
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                                <form class="form-control" action="">
+                                <form class="form-control" action="" method="post">
                                     <input class="form-control mt-1" type="text" placeholder="Username">
                                     <input class="form-control mt-1" type="password" placeholder="Password">
                                     <input class="form-control mt-1" type="password" placeholder="Confirm Password">
@@ -145,7 +145,7 @@
                                 </form>
                             </div>
                             <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                                <form class="form-control" action="">
+                                <form class="form-control" action="" method="post">
                                     <input class="form-control mt-1" type="text" placeholder="Username or Email adress">
                                     <input class="form-control mt-1" type="password" placeholder="Password">
                                     <button class="btn loginSignBtn form-control">Login</button>

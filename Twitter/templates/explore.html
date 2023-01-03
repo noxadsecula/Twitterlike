@@ -24,18 +24,18 @@
             <div class="col-lg-4 leftMenu">
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="index.html">Home</a>
+                        <a href="{% url 'index' %}">Home</a>
                     </div>
                     <div class="col-lg-12">
-                        <a href="profile.html">Profile</a>
+                        <a href="{% url 'profile' %}">Profile</a>
                     </div>
                     <div class="col-lg-12">
-                        <a href="explore.html">Explore</a>
+                        <a href="{% url 'explore' %}">Explore</a>
                     </div>
                 </div>
                 <div class="row prflrRow">
                     <div class="col-lg-12 prflr">
-                        <a class="d-flex justify-content-evenly m-auto" href="profile.html"><img class="me-" src="img/profilepic.jpg" alt=""> <span>@Author name</span></a>
+                        <a class="d-flex justify-content-evenly m-auto" href="{% url 'profile' %}"><img class="me-" src="img/profilepic.jpg" alt=""> <span>@Author name</span></a>
                     </div>
                 </div> 
             </div>

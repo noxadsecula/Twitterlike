@@ -19,6 +19,7 @@ from post.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/post', include('post.urls')),
-    path('', index)
+    path('', index, name='index'),
+    path('post/', include('post.urls')),
+    path('user/', include('user.urls'))
 ]
