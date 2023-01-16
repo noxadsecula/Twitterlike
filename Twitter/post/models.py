@@ -13,5 +13,6 @@ class Post(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     likes = models.IntegerField(default=0)
+    retweets = models.IntegerField(default=0)
     def __str__(self):
         return self.content
